@@ -1,0 +1,124 @@
+body
+{
+    background-color: rgb(196, 189, 189);
+    box-sizing: border-box;
+}
+ul
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+li
+{
+    list-style: none;
+    margin: 20px 50px;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-30deg) skewX(25deg) translate(0, 0);
+    transition: 0,6s;
+    box-shadow: -20px 20px 10px gray;
+}
+li a
+{
+    border-radius: 10%;
+    text-decoration: none;
+    display: absolut;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    background-color: white;
+    box-shadow: -20px 20px 10px gray;
+}
+ul li a span
+{
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+ul li a:before
+{
+    content: "";
+    transform: skewY(-45deg);
+    height: 100%;
+    width: 17.5px;
+    position: absolute;
+    top: 9px;
+    left: -17px;
+    background-color: rgb(204, 201, 201);
+    transform: 0.6;
+}
+ul li a:after
+{
+    content: "";
+    transform: skewX(-45deg);
+    height: 19px;
+    width: 100%;
+    position: absolute;
+    bottom: -17px;
+    left: -9px;
+    background-color: rgb(204, 201, 201);
+    transform: 0.6;
+}
+ul li a:hover
+{
+  transform: translate(19px, -18px);  
+  box-shadow: -60px 60px 60px gray;
+}
+.fb span
+{
+    color: rgb(58, 126, 204);
+    text-align: center;
+    font-size: 70px;
+}
+a span:hover
+{
+    color: white;
+}
+.fb span:hover
+{
+    background-color: rgb(58, 126, 204);
+}
+.insta span
+{
+    color: rgb(241, 91, 80);
+    text-align: center;
+    font-size: 70px;
+}
+.insta span:hover
+{
+    background: linear-gradient(
+        to bottom,
+        rgb(153, 46, 64),
+        rgb(248, 5, 46),
+        rgb(255, 187, 0)
+    );
+}
+.twitter span
+{
+    background-color: #f9fcfd;
+    text-align: center;
+    color: rgb(65, 173, 236);
+    font-size: 70px;
+}
+.twitter span:hover
+{
+    background-color: rgb(65, 161, 216);
+}
+.git span
+{
+    background-color: rgb(240, 250, 245);
+    text-align: center;
+    font-size: 70px;
+    color: black;
+}
+.git span:hover
+{
+    background-color: rgb(16, 17, 17);
+}
+
